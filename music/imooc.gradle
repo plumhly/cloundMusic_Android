@@ -1,0 +1,21 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0",
+            multiDexEnabled  : true
+    ]
+
+    depVersion = [
+            appcompat: '28.0.0',
+            magic_indicator: "1.5.0",
+            okhttp: "4.9.0"
+    ]
+    depLibs = [
+            appcompat: "com.android.support:appcompat-v7:${depVersion.appcompat}",
+            magic_indicator: "com.github.hackware1993:MagicIndicator:${depVersion.magic_indicator}",
+            okhttp: "com.squareup.okhttp3:okhttp:${depVersion.okhttp}"
+    ]
+}

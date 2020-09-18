@@ -28,4 +28,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     compileOnly rootProject.depLibs.appcompat
     api rootProject.depLibs.okhttp
+    compileOnly rootProject.depLibs.gson
 }

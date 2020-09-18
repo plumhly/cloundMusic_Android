@@ -25,8 +25,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':lib_network')
 
     testImplementation 'junit:junit:4.12'
     implementation rootProject.depLibs.appcompat
     implementation project(':lib_common_ui')
+    implementation rootProject.depLibs.gson
+    implementation rootProject.depLibs.rxjava
+    implementation rootProject.depLibs.rxandroid
 }

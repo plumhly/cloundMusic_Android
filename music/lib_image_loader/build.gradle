@@ -26,5 +26,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation rootProject.depLibs.appcompat
+    compileOnly rootProject.depLibs.appcompat
+
+    implementation rootProject.depLibs.glide
+    annotationProcessor rootProject.depLibs.glide_compiler
+
+    compileOnly rootProject.depLibs.rxjava
+    compileOnly rootProject.depLibs.rxandroid
 }
